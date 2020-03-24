@@ -17,3 +17,6 @@ scalacOptions ++= Seq(
 libraryDependencies += "org.typelevel" %% "cats-core" % "1.4.0"
 
 addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
+libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % Test
+
+testOptions in Test += Tests.Argument(TestFrameworks.JUnit, "-a", "-v", "-s")

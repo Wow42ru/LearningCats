@@ -1,10 +1,3 @@
-package vla;
-
-import scala.Int;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class PolyTest<A> {
     void pr(String i) {
         System.out.println(i);;
@@ -28,7 +21,3 @@ public class PolyTest<A> {
 
     }
 }
-
-    d hoc полиморфизм.
-        Параметрический полиморфизм.
-        Полиморфизм подтипов.
