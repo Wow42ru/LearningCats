@@ -11,4 +11,4 @@ case class Test[A]() {
   }
 }
 
-val t =Test.apply().traverse(List[Future[Int]](Future(3),Future(2),Future(throw new Exception)))
+val t: Future[(List[Throwable], List[Int])] =Test.apply().traverse(List[Future[Int]](Future(3),Future(2),Future(throw new Exception)))
